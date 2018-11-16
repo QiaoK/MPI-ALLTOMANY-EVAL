@@ -49,6 +49,38 @@ starts to become poor when the number of iterations is greater than 16.
 
 * Example outputs on screen
   ```
+    % srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 2
+    -----------------------------------------------------------
+    Total number of MPI processes        = 512
+    Total number of sender   processes   = 512
+    Total number of receiver processes   = 8
+    Total number of iterations           = 2
+    Message block unit size              = 32 bytes
+    Max message size                     = 256 bytes
+    Min message size                     = 32 bytes
+    Max time of posting irecv            = 0.0117 sec
+    Max time of posting isend            = 0.0041 sec
+    Max time of MPI_Waitall()            = 0.0791 sec
+    Max end-to-end time                  = 0.0829 sec
+    (Max means the maximum among all 512 processes)
+    -----------------------------------------------------------
+
+    % srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 8
+    -----------------------------------------------------------
+    Total number of MPI processes        = 512
+    Total number of sender   processes   = 512
+    Total number of receiver processes   = 8
+    Total number of iterations           = 8
+    Message block unit size              = 32 bytes
+    Max message size                     = 256 bytes
+    Min message size                     = 32 bytes
+    Max time of posting irecv            = 0.0824 sec
+    Max time of posting isend            = 0.0047 sec
+    Max time of MPI_Waitall()            = 0.1161 sec
+    Max end-to-end time                  = 0.1895 sec
+    (Max means the maximum among all 512 processes)
+    -----------------------------------------------------------
+
     % srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 16
     -----------------------------------------------------------
     Total number of MPI processes        = 512
