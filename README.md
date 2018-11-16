@@ -48,6 +48,8 @@ starts to become poor when the number of iterations is greater than 16.
     `./slurm.knl`.
 
 * Example outputs on screen
+  * Note the example runs below show the end-to-end timing is not proportional
+    to the number of iterations when other parameters are kept constant.
   ```
     % srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 2
     -----------------------------------------------------------
