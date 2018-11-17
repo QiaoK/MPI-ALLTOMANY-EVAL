@@ -1,0 +1,290 @@
+% module list
+Currently Loaded Modulefiles:
+  1) modules/3.2.10.6
+  2) nsg/1.2.0
+  3) intel/18.0.1.163
+  4) craype-network-aries
+  5) craype/2.5.14
+  6) cray-libsci/18.03.1
+  7) udreg/2.3.2-6.0.7.0_33.18__g5196236.ari
+  8) ugni/6.0.14.0-6.0.7.0_23.1__gea11d3d.ari
+  9) pmi/5.0.13
+ 10) dmapp/7.1.1-6.0.7.0_34.3__g5a674e0.ari
+ 11) gni-headers/5.0.12.0-6.0.7.0_24.1__g3b1768f.ari
+ 12) xpmem/2.2.15-6.0.7.1_5.8__g7549d06.ari
+ 13) job/2.2.3-6.0.7.0_44.1__g6c4e934.ari
+ 14) dvs/2.7_2.2.113-6.0.7.1_7.1__g1bbc03e
+ 15) alps/6.6.43-6.0.7.0_26.4__ga796da3.ari
+ 16) rca/2.2.18-6.0.7.0_33.3__g2aa4f39.ari
+ 17) atp/2.1.1
+ 18) PrgEnv-intel/6.0.4
+ 19) craype-mic-knl
+ 20) cray-mpich/7.7.0
+ 21) altd/2.0
+ 22) darshan/3.1.4
+
+--------------------------------------------------
+---- Running on 512 MPI processes on Cori NKL ----
+---- SLURM_JOB_NUM_NODES = 8
+---- Running 64 MPI processes per KNL node
+---- command: srun -n 512 -c 4 --cpu_bind=cores
+--------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 2
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 2
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.0117 sec
+Max time of posting isend            = 0.0041 sec
+Max time of MPI_Waitall()            = 0.0791 sec
+Max end-to-end time                  = 0.0829 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 4
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 4
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.0224 sec
+Max time of posting isend            = 0.0061 sec
+Max time of MPI_Waitall()            = 0.0908 sec
+Max end-to-end time                  = 0.1041 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 6
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 6
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.0439 sec
+Max time of posting isend            = 0.0035 sec
+Max time of MPI_Waitall()            = 0.0943 sec
+Max end-to-end time                  = 0.1328 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 8
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 8
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.0824 sec
+Max time of posting isend            = 0.0047 sec
+Max time of MPI_Waitall()            = 0.1161 sec
+Max end-to-end time                  = 0.1895 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 10
+srun: Job 16396665 step creation temporarily disabled, retrying
+srun: Step created for job 16396665
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 10
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.1358 sec
+Max time of posting isend            = 0.0043 sec
+Max time of MPI_Waitall()            = 0.1348 sec
+Max end-to-end time                  = 0.2608 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 12
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 12
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.2066 sec
+Max time of posting isend            = 0.0042 sec
+Max time of MPI_Waitall()            = 0.1498 sec
+Max end-to-end time                  = 0.3365 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 14
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 14
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.3419 sec
+Max time of posting isend            = 0.0038 sec
+Max time of MPI_Waitall()            = 0.2122 sec
+Max end-to-end time                  = 0.5085 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 16
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 16
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.4630 sec
+Max time of posting isend            = 0.0044 sec
+Max time of MPI_Waitall()            = 0.2542 sec
+Max end-to-end time                  = 0.6427 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 18
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 18
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.6893 sec
+Max time of posting isend            = 0.0051 sec
+Max time of MPI_Waitall()            = 0.3338 sec
+Max end-to-end time                  = 0.9358 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 20
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 20
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 1.2770 sec
+Max time of posting isend            = 0.0043 sec
+Max time of MPI_Waitall()            = 0.5062 sec
+Max end-to-end time                  = 1.4604 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 22
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 22
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 1.5984 sec
+Max time of posting isend            = 0.0043 sec
+Max time of MPI_Waitall()            = 0.5244 sec
+Max end-to-end time                  = 1.9101 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 24
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 24
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 2.2982 sec
+Max time of posting isend            = 0.0051 sec
+Max time of MPI_Waitall()            = 0.7397 sec
+Max end-to-end time                  = 2.5600 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 26
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 26
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 2.9507 sec
+Max time of posting isend            = 0.0075 sec
+Max time of MPI_Waitall()            = 0.9236 sec
+Max end-to-end time                  = 3.3142 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 28
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 28
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 3.9420 sec
+Max time of posting isend            = 0.0050 sec
+Max time of MPI_Waitall()            = 1.1978 sec
+Max end-to-end time                  = 4.2002 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 30
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 30
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 4.7522 sec
+Max time of posting isend            = 0.0067 sec
+Max time of MPI_Waitall()            = 1.4881 sec
+Max end-to-end time                  = 5.2506 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+
+srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 32
+-----------------------------------------------------------
+Total number of MPI processes        = 512
+Total number of sender   processes   = 512
+Total number of receiver processes   = 8
+Total number of iterations           = 32
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 5.6778 sec
+Max time of posting isend            = 0.0072 sec
+Max time of MPI_Waitall()            = 1.6124 sec
+Max end-to-end time                  = 6.2541 sec
+(Max means the maximum among all 512 processes)
+-----------------------------------------------------------
+

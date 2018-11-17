@@ -48,8 +48,13 @@ starts to become poor when the number of iterations is greater than 16.
     `./slurm.knl`.
 
 * Example outputs on screen
-  * Note the example runs below show the end-to-end timing is not proportional
-    to the number of iterations when other parameters are kept constant.
+  * Two output files `output_cori_knl.txt` and `output_cori_haswell.txt`
+    contain the outputs of runs on Cori KNL and Haswell nodes, respectively.
+  * Partial results from `output_cori_knl.txt` are given below. It shows the
+    end-to-end timing does **not proportionally** increase as the number of
+    iterations while all other parameters are kept constant. The end-to-end
+    times jumps from 0.1895 seconds (8 iterations) to 0.6427 seconds (16
+    iterations) to 6.2541 seconds (32 iterations).
   ```
     % srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 2
     -----------------------------------------------------------
