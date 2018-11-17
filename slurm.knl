@@ -34,7 +34,7 @@ echo ""
 for sn in 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32
 do
 command="srun -n $NP $KNL_OPT ./isendrecv -p $nprocs_per_node -b 32 -n $sn"
-echo "srun -n $NP $KNL_OPT ./isendrecv -p $nprocs_per_node -b 32 -n $sn"
+echo "$command"
 $command
 echo ""
 done
