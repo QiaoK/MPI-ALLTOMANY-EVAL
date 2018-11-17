@@ -1,28 +1,30 @@
-## Evaluate All-to-many Communication Using MPI Asynchronous Functions
+## All-to-many Communication Implemented Using MPI Asynchronous Functions
 
 This repository contains a program designed to evaluate the performance of
 all-to-many personalized communication implemented using MPI asynchronous
 communication functions `MPI_Isend`, `MPI_Irecv`, and `MPI_Waitall`.
 
-The program `isendrecv.c` runs the all-to-many communication in a loop,
-containing only calls to `MPI_Isend`, `MPI_Irecv`, and `MPI_Waitall`, but no
-other MPI communication functions. The number of iterations can be set by the
-command-line option `-n`. The default is 100. The message sizes are set to be
-different among processes, but they are all multiples of the `unit message
-size`. The default `unit message size` is 10 bytes, adjustable by command-line
-option `-b`.
+The program [./isendrecv.c](isendrecv.c) runs the all-to-many communication in
+a loop, containing only calls to `MPI_Isend`, `MPI_Irecv`, and `MPI_Waitall`,
+but no other MPI communication functions. The number of iterations can be set
+by the command-line option `-n`. The default is 100. The message sizes are set
+to be different among processes, but they are all multiples of the `unit
+message size`. The default `unit message size` is 10 bytes, adjustable by
+command-line option `-b`.
 
-Program `isendrecv.c` is designed to run multiple compute nodes with multiple
-MPI processes on each node. The command-line option `-p` should be set to the
-number of MPI processes per compute node.
+Program [./isendrecv.c](isendrecv.c) is designed to run multiple compute nodes
+with multiple MPI processes on each node. The command-line option `-p` should
+be set to the number of MPI processes per compute node.
 
 When running this program on
-[Cori](http://www.nersc.gov/users/computational-systems/cori) KNL nodes with
-64 MPI processes on each node, we found that the timing of posting `MPI_Irecv`
-starts to become poor when the number of iterations is greater than 16.
+[Cori](http://www.nersc.gov/users/computational-systems/cori) KNL nodes at
+NERSC with 64 MPI processes on each node, we found that the timing of posting
+`MPI_Irecv` starts to become poor when the number of iterations is greater than
+16.
 
 * Compile command:
-  * Edit file `Makefile` to customize the C compiler and compile options.
+  * Edit file [./Makefile](Makefile) to customize the C compiler and compile
+    options.
   * Run command `make` to compile and generate the executable program named
     `isendrecv`.
   * To compile for KNL nodes on Cori @NERSC, run command model swap below,
@@ -45,16 +47,18 @@ starts to become poor when the number of iterations is greater than 16.
          [-n] number of iterations
     ```
   * An example batch script file for job running on Cori @NERSC is given in
-    `./slurm.knl`.
+    [./slurm.knl](slurm.knl).
 
 * Example outputs on screen
-  * Two output files `output_cori_knl.txt` and `output_cori_haswell.txt`
-    contain the outputs of runs on Cori KNL and Haswell nodes, respectively.
-  * Partial results from `output_cori_knl.txt` are given below. It shows the
-    end-to-end timing does **not proportionally** increase as the number of
-    iterations while all other parameters are kept constant. The end-to-end
-    times jumps from 0.1895 seconds (8 iterations) to 0.6427 seconds (16
-    iterations) to 6.2541 seconds (32 iterations).
+  * Two output files included in this repo,
+    [./output_cori_knl.txt](output_cori_knl.txt) and
+    [./output_cori_haswell.txt](output_cori_haswell.txt) contain the outputs of
+    runs on Cori KNL and Haswell nodes, respectively.
+  * Partial results from  [./output_cori_knl.txt](output_cori_knl.txt) are
+    given below. It shows the end-to-end timing does **NOT** proportionally
+    increase as the number of iterations while all other parameters are kept
+    constant. The end-to-end times jumps from 0.1895 seconds (8 iterations) to
+    0.6427 seconds (16 iterations) to 6.2541 seconds (32 iterations).
   ```
     % srun -n 512 -c 4 --cpu_bind=cores ./isendrecv -p 64 -b 32 -n 2
     -----------------------------------------------------------
