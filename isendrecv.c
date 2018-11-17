@@ -3,8 +3,8 @@
  * See COPYRIGHT notice in top-level directory.
  *
  * This program evaluates the performance of an all-to-many communication
- * pattern, using MPI asynchronous functions MPI_Isend, MPI_Irecv, and
- * MPI_Waitall in a loop.
+ * pattern implemented using MPI asynchronous functions MPI_Isend, MPI_Irecv,
+ * and MPI_Waitall.
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,8 +33,8 @@ usage(char *argv0)
     char *help =
     "Usage: %s [OPTION]... [FILE]...\n"
     "       [-h] Print help\n"
-    "       [-p] number of MPI processes per node\n";
-    "       [-b] message block unit size\n";
+    "       [-p] number of MPI processes per node\n"
+    "       [-b] message block unit size\n"
     "       [-n] number of iterations\n";
     fprintf(stderr, help, argv0);
 }
@@ -168,6 +168,8 @@ int main(int argc, char** argv)
     MPI_Reduce(&s_len, &s_min, 1, MPI_INT, MPI_MIN, 0, MPI_COMM_WORLD);
 
     if (rank == 0) {
+        printf("-----------------------------------------------------------\n");
+        printf("All-to-many communication implemented using MPI isend/irecv\n");
         printf("-----------------------------------------------------------\n");
         printf("Total number of MPI processes        = %d\n",nprocs);
         printf("Total number of sender   processes   = %d\n",nprocs);
