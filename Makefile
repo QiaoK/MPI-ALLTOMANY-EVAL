@@ -1,6 +1,5 @@
 
 MPICC       = mpicc
-MPICC       = cc
 
 CFLAGS      = -Ofast
 INCLUDES    =
@@ -13,8 +12,11 @@ LIBS        =
 isendrecv: isendrecv.o
 	$(MPICC) $(CFLAGS) -o $@ $^ $(LDFLAGS) $(LIBS)
 
+alltoallw: alltoallw.o
+	$(MPICC) $(CFLAGS) -o $@ $^ $(LDFLAGS) $(LIBS)
+
 clean:
-	rm -f core.* *.o isendrecv
+	rm -f core.* *.o isendrecv alltoallw
 
 .PHONY: clean
 
