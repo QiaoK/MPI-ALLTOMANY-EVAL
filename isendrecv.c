@@ -133,8 +133,8 @@ int main(int argc, char** argv)
 
         /* senders (all processes in MPI_COMM_WORLD) */
         t_cur = MPI_Wtime();
+        char *ptr = (char*)s_buf;
         for (i=0; i<nrecvs; i++) {
-            char *ptr = (char*)s_buf;
             int r_rank = i * nprocs_node;
             if (verbose) printf("%2d send to %2d: s_len=%d\n",rank,r_rank,s_len);
             err = MPI_Isend(ptr, s_len, MPI_BYTE, r_rank, 0, MPI_COMM_WORLD, &req[j++]);
