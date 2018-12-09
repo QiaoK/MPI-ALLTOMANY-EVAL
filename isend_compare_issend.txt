@@ -1,0 +1,288 @@
+-----------------------------------------------------------
+All-to-many communication implemented using MPI isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 2
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.0435 sec
+Max time of posting isend            = 0.0133 sec
+Max time of MPI_Waitall()            = 0.6346 sec
+Max end-to-end time                  = 0.6606 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 4
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.3068 sec
+Max time of posting isend            = 0.0160 sec
+Max time of MPI_Waitall()            = 0.8341 sec
+Max end-to-end time                  = 1.0131 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 8
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 4.0927 sec
+Max time of posting isend            = 0.0137 sec
+Max time of MPI_Waitall()            = 2.4103 sec
+Max end-to-end time                  = 5.1334 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 16
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 20.4194 sec
+Max time of posting isend            = 0.0148 sec
+Max time of MPI_Waitall()            = 6.5353 sec
+Max end-to-end time                  = 22.0099 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 32
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 72.9219 sec
+Max time of posting isend            = 0.0151 sec
+Max time of MPI_Waitall()            = 12.5606 sec
+Max end-to-end time                  = 77.1203 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 64
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 287.3326 sec
+Max time of posting isend            = 0.0216 sec
+Max time of MPI_Waitall()            = 37.1186 sec
+Max end-to-end time                  = 294.6230 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI issend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 2
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.0438 sec
+Max time of posting issend            = 0.0178 sec
+Max time of MPI_Waitall()            = 0.7293 sec
+Max end-to-end time                  = 0.7341 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI issend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 8
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.1135 sec
+Max time of posting issend            = 0.0168 sec
+Max time of MPI_Waitall()            = 0.8612 sec
+Max end-to-end time                  = 0.8691 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI issend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 4
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.0691 sec
+Max time of posting issend            = 0.0130 sec
+Max time of MPI_Waitall()            = 0.7515 sec
+Max end-to-end time                  = 0.7605 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI issend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 16
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.2108 sec
+Max time of posting issend            = 0.0167 sec
+Max time of MPI_Waitall()            = 1.0325 sec
+Max end-to-end time                  = 1.0419 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI issend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 32
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.4049 sec
+Max time of posting issend            = 0.0203 sec
+Max time of MPI_Waitall()            = 1.4411 sec
+Max end-to-end time                  = 1.4504 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI issend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 64
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of posting irecv            = 0.7853 sec
+Max time of posting issend            = 0.0229 sec
+Max time of MPI_Waitall()            = 2.2245 sec
+Max end-to-end time                  = 2.2370 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI gather + isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 2
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of Gather                   = 0.0197 sec
+Max time of All to All               = 0.0104 sec
+Max time of MPI_Waitall()            = 0.0142 sec
+Max end-to-end time                  = 0.0219 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI gather + isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 4
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of Gather                   = 0.0265 sec
+Max time of All to All               = 0.0110 sec
+Max time of MPI_Waitall()            = 0.0190 sec
+Max end-to-end time                  = 0.0277 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI gather + isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 8
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of Gather                   = 0.0387 sec
+Max time of All to All               = 0.0136 sec
+Max time of MPI_Waitall()            = 0.0273 sec
+Max end-to-end time                  = 0.0399 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI gather + isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 16
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of Gather                   = 0.0670 sec
+Max time of All to All               = 0.0205 sec
+Max time of MPI_Waitall()            = 0.0451 sec
+Max end-to-end time                  = 0.0683 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI gather + isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 32
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of Gather                   = 0.1435 sec
+Max time of All to All               = 0.0421 sec
+Max time of MPI_Waitall()            = 0.0841 sec
+Max end-to-end time                  = 0.1448 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
+-----------------------------------------------------------
+All-to-many communication implemented using MPI gather + isend/irecv
+-----------------------------------------------------------
+Total number of MPI processes        = 2048
+Total number of sender   processes   = 2048
+Total number of receiver processes   = 32
+Total number of iterations           = 64
+Message block unit size              = 32 bytes
+Max message size                     = 256 bytes
+Min message size                     = 32 bytes
+Max time of Gather                   = 0.3842 sec
+Max time of All to All               = 0.1418 sec
+Max time of MPI_Waitall()            = 0.1851 sec
+Max end-to-end time                  = 0.3861 sec
+(Max means the maximum among all 2048 processes)
+-----------------------------------------------------------
